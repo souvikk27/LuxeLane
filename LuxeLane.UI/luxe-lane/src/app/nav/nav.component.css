@@ -1,0 +1,78 @@
+nav {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo a {
+    display: block;
+  }
+  
+  .logo img {
+    height: 20px;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    padding-left: 10px; /* Add some padding to the left */
+  }
+  
+  .search-bar .fa-magnifying-glass {
+    color: #999; /* Set the color of the magnifying glass icon */
+    margin-right: 8px; /* Add some spacing between the icon and the input */
+  }
+  
+  .search-bar input {
+    padding: 8px 12px;
+    border: none;
+    font-size: 14px;
+    flex-grow: 1;
+  }
+  
+  .search-bar button {
+    background-color: #f2f2f2;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  .user-actions a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+    font-size: 14px;
+  }
+  
+  .user-actions a i {
+    font-size: 18px;
+  }
+
+
+  /* Responsive styles */
+@media (max-width: 768px) {
+    .navbar {
+      flex-wrap: wrap;
+    }
+  
+    .search-bar {
+      order: 3;
+      flex-basis: 100%;
+      margin-top: 10px;
+    }
+  
+    .user-actions {
+      order: 2;
+    }
+  }
