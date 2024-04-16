@@ -18,8 +18,8 @@ namespace Ecommerce.Service
 
         public override Expression<Func<Category, object>> Key() => o => o.Id;
 
-
-        public string GetCategoriesWithChildrenJson()
+        #region Legacy Subcategory Call
+        /*public string GetCategoriesWithChildrenJson()
         {
             var rootCategories = Context.Category
                     .Where(category => category.ParentId == null)
@@ -57,6 +57,54 @@ namespace Ecommerce.Service
             }
 
             return categoryWithChildren;
+        }*/
+        #endregion
+        
+        public string GetCategoriesWithChildrenJson()
+        {
+            var rootCategories = Context.Category
+                .Where(category => category.ParentId == null)
+                .ToList();
+
+            var categoriesWithChildren = new List<CategoryWithChildren>();
+
+            foreach (var rootCategory in rootCategories)
+            {
+                var categoryWithChildren = new CategoryWithChildren
+                {
+                    Id = rootCategory.Id,
+                    CategoryName = rootCategory.CategoryName,
+                    Children = new List<CategoryWithChildren>()
+                };
+
+                var queue = new Queue<CategoryWithChildren>();
+                queue.Enqueue(categoryWithChildren);
+
+                while (queue.Any())
+                {
+                    var currentCategory = queue.Dequeue();
+                    var subcategories = Context.Category
+                        .Where(c => c.ParentId == currentCategory.Id)
+                        .ToList();
+
+                    foreach (var subcategory in subcategories)
+                    {
+                        var childCategory = new CategoryWithChildren
+                        {
+                            Id = subcategory.Id,
+                            CategoryName = subcategory.CategoryName,
+                            Children = new List<CategoryWithChildren>()
+                        };
+
+                        currentCategory.Children.Add(childCategory);
+                        queue.Enqueue(childCategory);
+                    }
+                }
+
+                categoriesWithChildren.Add(categoryWithChildren);
+            }
+
+            return JsonConvert.SerializeObject(categoriesWithChildren, Formatting.Indented);
         }
     }
 }
