@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Luxelane.Domain.Entities.Models;
 
-namespace Luxelane.Domain.Migrator;
+namespace Luxelane.Domain.Entities;
 
 public partial class LuxelaneContext : DbContext
 {

@@ -6,4 +6,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Ardalis.Specification" Version="8.0.0" />
+    <PackageReference Include="Ardalis.Specification.EntityFrameworkCore" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Luxelane.Domain.Entities\LuxeLane.Domain.Entities.csproj" />
+    <ProjectReference Include="..\LuxeLane.Domain.Specification\LuxeLane.Domain.Specification.csproj" />
+  </ItemGroup>
+
 </Project>

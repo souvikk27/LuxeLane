@@ -1,17 +1,17 @@
-﻿using Luxelane.Domain.Migrator;
+﻿using LuxeLane.Domain.Migrator;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
 Console.WriteLine("Application started.");
 
 var serviceProvider = new ServiceCollection()
-    .AddDbContext<LuxelaneContext>(options => options.UseNpgsql("SqlConnection"))
+    .AddDbContext<MigrationContext>(options => options.UseNpgsql("SqlConnection"))
     .BuildServiceProvider();
 try
 {
     using (var scope = serviceProvider.CreateScope())
     {
-        var dbContext = scope.ServiceProvider.GetRequiredService<LuxelaneContext>();
+        var dbContext = scope.ServiceProvider.GetRequiredService<MigrationContext>();
 
         // Apply pending migrations
         dbContext.Database.Migrate();
