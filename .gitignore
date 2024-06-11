@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/LuxeLane.Backend/.vs/LuxeLane/FileContentIndex
+/LuxeLane.Backend/.vs
+/LuxeLane.Backend/src/app/LuxeLane.App.API/obj/project.nuget.cache
+/LuxeLane.Backend/src/app/LuxeLane.App.API/obj/project.assets.json
+/LuxeLane.Backend/src/app/LuxeLane.App.API/obj/LuxeLane.App.API.csproj.nuget.dgspec.json
+/LuxeLane.Backend/src/app/LuxeLane.App.API/obj/LuxeLane.App.API.csproj.nuget.g.props
+/LuxeLane.Backend/src/app/LuxeLane.App.API/obj/LuxeLane.App.API.csproj.nuget.g.targets
+/LuxeLane.Backend/src/app/LuxeLane.App.API/obj/Debug/net8.0
+/LuxeLane.Backend/src/domain/Luxelane.Domain.Entities/bin/Debug/net8.0
+/LuxeLane.Backend/src/domain/Luxelane.Domain.Entities/obj
