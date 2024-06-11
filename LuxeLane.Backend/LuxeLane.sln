@@ -9,9 +9,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "app", "app", "{DDA44484-840
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "domain", "domain", "{E70C6D9F-53A9-48E3-B419-2C7A4E77343C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Luxelane.Domain.Entities", "src\domain\Luxelane.Domain.Entities\Luxelane.Domain.Entities.csproj", "{75EEB7E2-4A73-467E-A08B-0E823C94144D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuxeLane.Domain.Entities", "src\domain\Luxelane.Domain.Entities\LuxeLane.Domain.Entities.csproj", "{75EEB7E2-4A73-467E-A08B-0E823C94144D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuxeLane.App.API", "src\app\LuxeLane.App.API\LuxeLane.App.API.csproj", "{F4E19EC5-E9BC-459D-8C1C-522343AB3AA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuxeLane.App.API", "src\app\LuxeLane.App.API\LuxeLane.App.API.csproj", "{F4E19EC5-E9BC-459D-8C1C-522343AB3AA3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuxeLane.Domain.Migrator", "src\domain\LuxeLane.Domain.Migrator\LuxeLane.Domain.Migrator.csproj", "{AC773AC1-EE38-43E5-8CAF-51F9DEE9D733}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuxeLane.Domain.Persistance", "src\domain\LuxeLane.Domain.Persistance\LuxeLane.Domain.Persistance.csproj", "{A48E9FF3-CB03-4A6C-BDBE-4FADF28C681F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuxeLane.Domain.Repository.Injection", "src\domain\LuxeLane.Domain.Repository.Injection\LuxeLane.Domain.Repository.Injection.csproj", "{B9390E59-1DAC-4853-9311-C56D4CDEF222}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuxeLane.Domain.Repository", "src\domain\LuxeLane.Domain.Repository\LuxeLane.Domain.Repository.csproj", "{C1570671-2E13-4694-B67F-09222ADC743E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuxeLane.Domain.Specification", "src\domain\LuxeLane.Domain.Specification\LuxeLane.Domain.Specification.csproj", "{553C1881-7ACC-4CC3-8736-5B2BAACB6F73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuxeLane.Domain.Enum", "src\domain\LuxeLane.Domain.Enum\LuxeLane.Domain.Enum.csproj", "{04D6366C-6405-4AEE-8F73-4CEC19649D62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuxeLane.Domain.Tests.Unit", "LuxeLane.Domain.Tests.Unit\LuxeLane.Domain.Tests.Unit.csproj", "{73A3F6E0-28BD-4E56-8086-52AABDC24CC7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +41,34 @@ Global
 		{F4E19EC5-E9BC-459D-8C1C-522343AB3AA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4E19EC5-E9BC-459D-8C1C-522343AB3AA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4E19EC5-E9BC-459D-8C1C-522343AB3AA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC773AC1-EE38-43E5-8CAF-51F9DEE9D733}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC773AC1-EE38-43E5-8CAF-51F9DEE9D733}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC773AC1-EE38-43E5-8CAF-51F9DEE9D733}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC773AC1-EE38-43E5-8CAF-51F9DEE9D733}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A48E9FF3-CB03-4A6C-BDBE-4FADF28C681F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A48E9FF3-CB03-4A6C-BDBE-4FADF28C681F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A48E9FF3-CB03-4A6C-BDBE-4FADF28C681F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A48E9FF3-CB03-4A6C-BDBE-4FADF28C681F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9390E59-1DAC-4853-9311-C56D4CDEF222}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9390E59-1DAC-4853-9311-C56D4CDEF222}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9390E59-1DAC-4853-9311-C56D4CDEF222}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9390E59-1DAC-4853-9311-C56D4CDEF222}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1570671-2E13-4694-B67F-09222ADC743E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1570671-2E13-4694-B67F-09222ADC743E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1570671-2E13-4694-B67F-09222ADC743E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1570671-2E13-4694-B67F-09222ADC743E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{553C1881-7ACC-4CC3-8736-5B2BAACB6F73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{553C1881-7ACC-4CC3-8736-5B2BAACB6F73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{553C1881-7ACC-4CC3-8736-5B2BAACB6F73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{553C1881-7ACC-4CC3-8736-5B2BAACB6F73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04D6366C-6405-4AEE-8F73-4CEC19649D62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04D6366C-6405-4AEE-8F73-4CEC19649D62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04D6366C-6405-4AEE-8F73-4CEC19649D62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04D6366C-6405-4AEE-8F73-4CEC19649D62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73A3F6E0-28BD-4E56-8086-52AABDC24CC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73A3F6E0-28BD-4E56-8086-52AABDC24CC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73A3F6E0-28BD-4E56-8086-52AABDC24CC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73A3F6E0-28BD-4E56-8086-52AABDC24CC7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,6 +78,13 @@ Global
 		{E70C6D9F-53A9-48E3-B419-2C7A4E77343C} = {24B583E6-ADE7-4467-8CD1-3E267180E372}
 		{75EEB7E2-4A73-467E-A08B-0E823C94144D} = {E70C6D9F-53A9-48E3-B419-2C7A4E77343C}
 		{F4E19EC5-E9BC-459D-8C1C-522343AB3AA3} = {DDA44484-8400-4915-95E4-19CB32D738EE}
+		{AC773AC1-EE38-43E5-8CAF-51F9DEE9D733} = {E70C6D9F-53A9-48E3-B419-2C7A4E77343C}
+		{A48E9FF3-CB03-4A6C-BDBE-4FADF28C681F} = {E70C6D9F-53A9-48E3-B419-2C7A4E77343C}
+		{B9390E59-1DAC-4853-9311-C56D4CDEF222} = {E70C6D9F-53A9-48E3-B419-2C7A4E77343C}
+		{C1570671-2E13-4694-B67F-09222ADC743E} = {E70C6D9F-53A9-48E3-B419-2C7A4E77343C}
+		{553C1881-7ACC-4CC3-8736-5B2BAACB6F73} = {E70C6D9F-53A9-48E3-B419-2C7A4E77343C}
+		{04D6366C-6405-4AEE-8F73-4CEC19649D62} = {E70C6D9F-53A9-48E3-B419-2C7A4E77343C}
+		{73A3F6E0-28BD-4E56-8086-52AABDC24CC7} = {E70C6D9F-53A9-48E3-B419-2C7A4E77343C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {349FDB71-2C26-4A94-8BE3-4BCFEF27DC7A}
