@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Luxelane.Domain.Entities.Models;
 
-public partial class Customer
+public sealed partial class Customer
 {
     public Guid Id { get; set; }
 
@@ -49,41 +49,41 @@ public partial class Customer
 
     public Guid? Vendorid { get; set; }
 
-    public virtual ICollection<Activitylog> Activitylogs { get; set; } = new List<Activitylog>();
+    public ICollection<Activitylog> Activitylogs { get; set; } = new List<Activitylog>();
 
-    public virtual ICollection<Backinstocksubscription> Backinstocksubscriptions { get; set; } = new List<Backinstocksubscription>();
+    public ICollection<Backinstocksubscription> Backinstocksubscriptions { get; set; } = new List<Backinstocksubscription>();
 
-    public virtual Address? Billingaddress { get; set; }
+    public Address? Billingaddress { get; set; }
 
-    public virtual ICollection<Blogcomment> Blogcomments { get; set; } = new List<Blogcomment>();
+    public ICollection<Blogcomment> Blogcomments { get; set; } = new List<Blogcomment>();
 
-    public virtual ICollection<Externalauthenticationrecord> Externalauthenticationrecords { get; set; } = new List<Externalauthenticationrecord>();
+    public ICollection<Externalauthenticationrecord> Externalauthenticationrecords { get; set; } = new List<Externalauthenticationrecord>();
 
-    public virtual ICollection<ForumsPost> ForumsPosts { get; set; } = new List<ForumsPost>();
+    public ICollection<ForumsPost> ForumsPosts { get; set; } = new List<ForumsPost>();
 
-    public virtual ICollection<ForumsPrivatemessage> ForumsPrivatemessageFromcustomers { get; set; } = new List<ForumsPrivatemessage>();
+    public ICollection<ForumsPrivatemessage> ForumsPrivatemessageFromcustomers { get; set; } = new List<ForumsPrivatemessage>();
 
-    public virtual ICollection<ForumsPrivatemessage> ForumsPrivatemessageTocustomers { get; set; } = new List<ForumsPrivatemessage>();
+    public ICollection<ForumsPrivatemessage> ForumsPrivatemessageTocustomers { get; set; } = new List<ForumsPrivatemessage>();
 
-    public virtual ICollection<ForumsSubscription> ForumsSubscriptions { get; set; } = new List<ForumsSubscription>();
+    public ICollection<ForumsSubscription> ForumsSubscriptions { get; set; } = new List<ForumsSubscription>();
 
-    public virtual ICollection<ForumsTopic> ForumsTopics { get; set; } = new List<ForumsTopic>();
+    public ICollection<ForumsTopic> ForumsTopics { get; set; } = new List<ForumsTopic>();
 
-    public virtual ICollection<Log> Logs { get; set; } = new List<Log>();
+    public ICollection<Log> Logs { get; set; } = new List<Log>();
 
-    public virtual ICollection<Newscomment> Newscomments { get; set; } = new List<Newscomment>();
+    public ICollection<Newscomment> Newscomments { get; set; } = new List<Newscomment>();
 
-    public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
+    public ICollection<Order> Orders { get; set; } = new List<Order>();
 
-    public virtual ICollection<Pollvotingrecord> Pollvotingrecords { get; set; } = new List<Pollvotingrecord>();
+    public ICollection<Pollvotingrecord> Pollvotingrecords { get; set; } = new List<Pollvotingrecord>();
 
-    public virtual ICollection<Productreview> Productreviews { get; set; } = new List<Productreview>();
+    public ICollection<Productreview> Productreviews { get; set; } = new List<Productreview>();
 
-    public virtual ICollection<Returnrequest> Returnrequests { get; set; } = new List<Returnrequest>();
+    public ICollection<Returnrequest> Returnrequests { get; set; } = new List<Returnrequest>();
 
-    public virtual ICollection<Rewardpointshistory> Rewardpointshistories { get; set; } = new List<Rewardpointshistory>();
+    public ICollection<Rewardpointshistory> Rewardpointshistories { get; set; } = new List<Rewardpointshistory>();
 
-    public virtual Address? Shippingaddress { get; set; }
+    public Address? Shippingaddress { get; set; }
 
-    public virtual ICollection<Shoppingcartitem> Shoppingcartitems { get; set; } = new List<Shoppingcartitem>();
+    public ICollection<Shoppingcartitem> Shoppingcartitems { get; set; } = new List<Shoppingcartitem>();
 }

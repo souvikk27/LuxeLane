@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Luxelane.Domain.Entities.Models;
+﻿namespace Luxelane.Domain.Entities.Models;
 
 public partial class Category
 {

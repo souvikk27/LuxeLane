@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using Luxelane.Domain.Entities.Models;
 
-namespace Luxelane.Domain.Entities.Models;
+namespace Luxelane.Domain.Migrator;
 
 public partial class LuxelaneContext : DbContext
 {
@@ -15,228 +14,228 @@ public partial class LuxelaneContext : DbContext
     {
     }
 
-    public virtual DbSet<Aclrecord> Aclrecords { get; set; }
+    public virtual DbSet<Aclrecord>? Aclrecords { get; set; }
 
-    public virtual DbSet<Activitylog> Activitylogs { get; set; }
+    public virtual DbSet<Activitylog>? Activitylogs { get; set; }
 
-    public virtual DbSet<Activitylogtype> Activitylogtypes { get; set; }
+    public virtual DbSet<Activitylogtype>? Activitylogtypes { get; set; }
 
-    public virtual DbSet<Address> Addresses { get; set; }
+    public virtual DbSet<Address>? Addresses { get; set; }
 
-    public virtual DbSet<Addressattribute> Addressattributes { get; set; }
+    public virtual DbSet<Addressattribute>? Addressattributes { get; set; }
 
-    public virtual DbSet<Addressattributevalue> Addressattributevalues { get; set; }
+    public virtual DbSet<Addressattributevalue>? Addressattributevalues { get; set; }
 
-    public virtual DbSet<Affiliate> Affiliates { get; set; }
+    public virtual DbSet<Affiliate>? Affiliates { get; set; }
 
-    public virtual DbSet<Backinstocksubscription> Backinstocksubscriptions { get; set; }
+    public virtual DbSet<Backinstocksubscription>? Backinstocksubscriptions { get; set; }
 
-    public virtual DbSet<Blogcomment> Blogcomments { get; set; }
+    public virtual DbSet<Blogcomment>? Blogcomments { get; set; }
 
-    public virtual DbSet<Blogpost> Blogposts { get; set; }
+    public virtual DbSet<Blogpost>? Blogposts { get; set; }
 
-    public virtual DbSet<Campaign> Campaigns { get; set; }
+    public virtual DbSet<Campaign>? Campaigns { get; set; }
 
-    public virtual DbSet<Category> Categories { get; set; }
+    public virtual DbSet<Category>? Categories { get; set; }
 
-    public virtual DbSet<Categorytemplate> Categorytemplates { get; set; }
+    public virtual DbSet<Categorytemplate>? Categorytemplates { get; set; }
 
-    public virtual DbSet<Checkoutattribute> Checkoutattributes { get; set; }
+    public virtual DbSet<Checkoutattribute>? Checkoutattributes { get; set; }
 
-    public virtual DbSet<Checkoutattributevalue> Checkoutattributevalues { get; set; }
+    public virtual DbSet<Checkoutattributevalue>? Checkoutattributevalues { get; set; }
 
-    public virtual DbSet<Country> Countries { get; set; }
+    public virtual DbSet<Country>? Countries { get; set; }
 
-    public virtual DbSet<Crosssellproduct> Crosssellproducts { get; set; }
+    public virtual DbSet<Crosssellproduct>? Crosssellproducts { get; set; }
 
-    public virtual DbSet<Currency> Currencies { get; set; }
+    public virtual DbSet<Currency>? Currencies { get; set; }
 
-    public virtual DbSet<Customer> Customers { get; set; }
+    public virtual DbSet<Customer>? Customers { get; set; }
 
-    public virtual DbSet<CustomerCustomerroleMapping> CustomerCustomerroleMappings { get; set; }
+    public virtual DbSet<CustomerCustomerroleMapping>? CustomerCustomerroleMappings { get; set; }
 
-    public virtual DbSet<Customeraddress> Customeraddresses { get; set; }
+    public virtual DbSet<Customeraddress>? Customeraddresses { get; set; }
 
-    public virtual DbSet<Customerattribute> Customerattributes { get; set; }
+    public virtual DbSet<Customerattribute>? Customerattributes { get; set; }
 
-    public virtual DbSet<Customerattributevalue> Customerattributevalues { get; set; }
+    public virtual DbSet<Customerattributevalue>? Customerattributevalues { get; set; }
 
-    public virtual DbSet<Customerrole> Customerroles { get; set; }
+    public virtual DbSet<Customerrole>? Customerroles { get; set; }
 
-    public virtual DbSet<Deliverydate> Deliverydates { get; set; }
+    public virtual DbSet<Deliverydate>? Deliverydates { get; set; }
 
-    public virtual DbSet<Discount> Discounts { get; set; }
+    public virtual DbSet<Discount>? Discounts { get; set; }
 
-    public virtual DbSet<DiscountAppliedtocategory> DiscountAppliedtocategories { get; set; }
+    public virtual DbSet<DiscountAppliedtocategory>? DiscountAppliedtocategories { get; set; }
 
-    public virtual DbSet<DiscountAppliedtomanufacturer> DiscountAppliedtomanufacturers { get; set; }
+    public virtual DbSet<DiscountAppliedtomanufacturer>? DiscountAppliedtomanufacturers { get; set; }
 
-    public virtual DbSet<DiscountAppliedtoproduct> DiscountAppliedtoproducts { get; set; }
+    public virtual DbSet<DiscountAppliedtoproduct>? DiscountAppliedtoproducts { get; set; }
 
-    public virtual DbSet<Discountrequirement> Discountrequirements { get; set; }
+    public virtual DbSet<Discountrequirement>? Discountrequirements { get; set; }
 
-    public virtual DbSet<Discountusagehistory> Discountusagehistories { get; set; }
+    public virtual DbSet<Discountusagehistory>? Discountusagehistories { get; set; }
 
-    public virtual DbSet<Download> Downloads { get; set; }
+    public virtual DbSet<Download>? Downloads { get; set; }
 
-    public virtual DbSet<Emailaccount> Emailaccounts { get; set; }
+    public virtual DbSet<Emailaccount>? Emailaccounts { get; set; }
 
-    public virtual DbSet<Externalauthenticationrecord> Externalauthenticationrecords { get; set; }
+    public virtual DbSet<Externalauthenticationrecord>? Externalauthenticationrecords { get; set; }
 
-    public virtual DbSet<ForumsForum> ForumsForums { get; set; }
+    public virtual DbSet<ForumsForum>? ForumsForums { get; set; }
 
-    public virtual DbSet<ForumsGroup> ForumsGroups { get; set; }
+    public virtual DbSet<ForumsGroup>? ForumsGroups { get; set; }
 
-    public virtual DbSet<ForumsPost> ForumsPosts { get; set; }
+    public virtual DbSet<ForumsPost>? ForumsPosts { get; set; }
 
-    public virtual DbSet<ForumsPostvote> ForumsPostvotes { get; set; }
+    public virtual DbSet<ForumsPostvote>? ForumsPostvotes { get; set; }
 
-    public virtual DbSet<ForumsPrivatemessage> ForumsPrivatemessages { get; set; }
+    public virtual DbSet<ForumsPrivatemessage>? ForumsPrivatemessages { get; set; }
 
-    public virtual DbSet<ForumsSubscription> ForumsSubscriptions { get; set; }
+    public virtual DbSet<ForumsSubscription>? ForumsSubscriptions { get; set; }
 
-    public virtual DbSet<ForumsTopic> ForumsTopics { get; set; }
+    public virtual DbSet<ForumsTopic>? ForumsTopics { get; set; }
 
-    public virtual DbSet<Genericattribute> Genericattributes { get; set; }
+    public virtual DbSet<Genericattribute>? Genericattributes { get; set; }
 
-    public virtual DbSet<Giftcard> Giftcards { get; set; }
+    public virtual DbSet<Giftcard>? Giftcards { get; set; }
 
-    public virtual DbSet<Giftcardusagehistory> Giftcardusagehistories { get; set; }
+    public virtual DbSet<Giftcardusagehistory>? Giftcardusagehistories { get; set; }
 
-    public virtual DbSet<Language> Languages { get; set; }
+    public virtual DbSet<Language>? Languages { get; set; }
 
-    public virtual DbSet<Localestringresource> Localestringresources { get; set; }
+    public virtual DbSet<Localestringresource>? Localestringresources { get; set; }
 
-    public virtual DbSet<Localizedproperty> Localizedproperties { get; set; }
+    public virtual DbSet<Localizedproperty>? Localizedproperties { get; set; }
 
-    public virtual DbSet<Log> Logs { get; set; }
+    public virtual DbSet<Log>? Logs { get; set; }
 
-    public virtual DbSet<Manufacturer> Manufacturers { get; set; }
+    public virtual DbSet<Manufacturer>? Manufacturers { get; set; }
 
-    public virtual DbSet<Manufacturertemplate> Manufacturertemplates { get; set; }
+    public virtual DbSet<Manufacturertemplate>? Manufacturertemplates { get; set; }
 
-    public virtual DbSet<Measuredimension> Measuredimensions { get; set; }
+    public virtual DbSet<Measuredimension>? Measuredimensions { get; set; }
 
-    public virtual DbSet<Measureweight> Measureweights { get; set; }
+    public virtual DbSet<Measureweight>? Measureweights { get; set; }
 
-    public virtual DbSet<Messagetemplate> Messagetemplates { get; set; }
+    public virtual DbSet<Messagetemplate>? Messagetemplates { get; set; }
 
-    public virtual DbSet<News> News { get; set; }
+    public virtual DbSet<News>? News { get; set; }
 
-    public virtual DbSet<Newscomment> Newscomments { get; set; }
+    public virtual DbSet<Newscomment>? Newscomments { get; set; }
 
-    public virtual DbSet<Newslettersubscription> Newslettersubscriptions { get; set; }
+    public virtual DbSet<Newslettersubscription>? Newslettersubscriptions { get; set; }
 
-    public virtual DbSet<Order> Orders { get; set; }
+    public virtual DbSet<Order>? Orders { get; set; }
 
-    public virtual DbSet<Orderitem> Orderitems { get; set; }
+    public virtual DbSet<Orderitem>? Orderitems { get; set; }
 
-    public virtual DbSet<Ordernote> Ordernotes { get; set; }
+    public virtual DbSet<Ordernote>? Ordernotes { get; set; }
 
-    public virtual DbSet<Permissionrecord> Permissionrecords { get; set; }
+    public virtual DbSet<Permissionrecord>? Permissionrecords { get; set; }
 
-    public virtual DbSet<PermissionrecordRoleMapping> PermissionrecordRoleMappings { get; set; }
+    public virtual DbSet<PermissionrecordRoleMapping>? PermissionrecordRoleMappings { get; set; }
 
-    public virtual DbSet<Picture> Pictures { get; set; }
+    public virtual DbSet<Picture>? Pictures { get; set; }
 
-    public virtual DbSet<Poll> Polls { get; set; }
+    public virtual DbSet<Poll>? Polls { get; set; }
 
-    public virtual DbSet<Pollanswer> Pollanswers { get; set; }
+    public virtual DbSet<Pollanswer>? Pollanswers { get; set; }
 
-    public virtual DbSet<Pollvotingrecord> Pollvotingrecords { get; set; }
+    public virtual DbSet<Pollvotingrecord>? Pollvotingrecords { get; set; }
 
-    public virtual DbSet<Predefinedproductattributevalue> Predefinedproductattributevalues { get; set; }
+    public virtual DbSet<Predefinedproductattributevalue>? Predefinedproductattributevalues { get; set; }
 
-    public virtual DbSet<Product> Products { get; set; }
+    public virtual DbSet<Product>? Products { get; set; }
 
-    public virtual DbSet<ProductCategoryMapping> ProductCategoryMappings { get; set; }
+    public virtual DbSet<ProductCategoryMapping>? ProductCategoryMappings { get; set; }
 
-    public virtual DbSet<ProductManufacturerMapping> ProductManufacturerMappings { get; set; }
+    public virtual DbSet<ProductManufacturerMapping>? ProductManufacturerMappings { get; set; }
 
-    public virtual DbSet<ProductPictureMapping> ProductPictureMappings { get; set; }
+    public virtual DbSet<ProductPictureMapping>? ProductPictureMappings { get; set; }
 
-    public virtual DbSet<ProductProductattributeMapping> ProductProductattributeMappings { get; set; }
+    public virtual DbSet<ProductProductattributeMapping>? ProductProductattributeMappings { get; set; }
 
-    public virtual DbSet<ProductProducttagMapping> ProductProducttagMappings { get; set; }
+    public virtual DbSet<ProductProducttagMapping>? ProductProducttagMappings { get; set; }
 
-    public virtual DbSet<ProductSpecificationattributeMapping> ProductSpecificationattributeMappings { get; set; }
+    public virtual DbSet<ProductSpecificationattributeMapping>? ProductSpecificationattributeMappings { get; set; }
 
-    public virtual DbSet<Productattribute> Productattributes { get; set; }
+    public virtual DbSet<Productattribute>? Productattributes { get; set; }
 
-    public virtual DbSet<Productattributecombination> Productattributecombinations { get; set; }
+    public virtual DbSet<Productattributecombination>? Productattributecombinations { get; set; }
 
-    public virtual DbSet<Productattributevalue> Productattributevalues { get; set; }
+    public virtual DbSet<Productattributevalue>? Productattributevalues { get; set; }
 
-    public virtual DbSet<Productreview> Productreviews { get; set; }
+    public virtual DbSet<Productreview>? Productreviews { get; set; }
 
-    public virtual DbSet<Productreviewhelpfulness> Productreviewhelpfulnesses { get; set; }
+    public virtual DbSet<Productreviewhelpfulness>? Productreviewhelpfulnesses { get; set; }
 
-    public virtual DbSet<Producttag> Producttags { get; set; }
+    public virtual DbSet<Producttag>? Producttags { get; set; }
 
-    public virtual DbSet<Producttemplate> Producttemplates { get; set; }
+    public virtual DbSet<Producttemplate>? Producttemplates { get; set; }
 
-    public virtual DbSet<Productwarehouseinventory> Productwarehouseinventories { get; set; }
+    public virtual DbSet<Productwarehouseinventory>? Productwarehouseinventories { get; set; }
 
-    public virtual DbSet<Queuedemail> Queuedemails { get; set; }
+    public virtual DbSet<Queuedemail>? Queuedemails { get; set; }
 
-    public virtual DbSet<Recurringpayment> Recurringpayments { get; set; }
+    public virtual DbSet<Recurringpayment>? Recurringpayments { get; set; }
 
-    public virtual DbSet<Recurringpaymenthistory> Recurringpaymenthistories { get; set; }
+    public virtual DbSet<Recurringpaymenthistory>? Recurringpaymenthistories { get; set; }
 
-    public virtual DbSet<Relatedproduct> Relatedproducts { get; set; }
+    public virtual DbSet<Relatedproduct>? Relatedproducts { get; set; }
 
-    public virtual DbSet<Returnrequest> Returnrequests { get; set; }
+    public virtual DbSet<Returnrequest>? Returnrequests { get; set; }
 
-    public virtual DbSet<Returnrequestaction> Returnrequestactions { get; set; }
+    public virtual DbSet<Returnrequestaction>? Returnrequestactions { get; set; }
 
-    public virtual DbSet<Returnrequestreason> Returnrequestreasons { get; set; }
+    public virtual DbSet<Returnrequestreason>? Returnrequestreasons { get; set; }
 
-    public virtual DbSet<Rewardpointshistory> Rewardpointshistories { get; set; }
+    public virtual DbSet<Rewardpointshistory>? Rewardpointshistories { get; set; }
 
-    public virtual DbSet<Scheduletask> Scheduletasks { get; set; }
+    public virtual DbSet<Scheduletask>? Scheduletasks { get; set; }
 
-    public virtual DbSet<Searchterm> Searchterms { get; set; }
+    public virtual DbSet<Searchterm>? Searchterms { get; set; }
 
-    public virtual DbSet<Setting> Settings { get; set; }
+    public virtual DbSet<Setting>? Settings { get; set; }
 
-    public virtual DbSet<Shipment> Shipments { get; set; }
+    public virtual DbSet<Shipment>? Shipments { get; set; }
 
-    public virtual DbSet<Shipmentitem> Shipmentitems { get; set; }
+    public virtual DbSet<Shipmentitem>? Shipmentitems { get; set; }
 
-    public virtual DbSet<Shippingmethod> Shippingmethods { get; set; }
+    public virtual DbSet<Shippingmethod>? Shippingmethods { get; set; }
 
-    public virtual DbSet<Shippingmethodrestriction> Shippingmethodrestrictions { get; set; }
+    public virtual DbSet<Shippingmethodrestriction>? Shippingmethodrestrictions { get; set; }
 
-    public virtual DbSet<Shoppingcartitem> Shoppingcartitems { get; set; }
+    public virtual DbSet<Shoppingcartitem>? Shoppingcartitems { get; set; }
 
-    public virtual DbSet<Specificationattribute> Specificationattributes { get; set; }
+    public virtual DbSet<Specificationattribute>? Specificationattributes { get; set; }
 
-    public virtual DbSet<Specificationattributeoption> Specificationattributeoptions { get; set; }
+    public virtual DbSet<Specificationattributeoption>? Specificationattributeoptions { get; set; }
 
-    public virtual DbSet<Stateprovince> Stateprovinces { get; set; }
+    public virtual DbSet<Stateprovince>? Stateprovinces { get; set; }
 
-    public virtual DbSet<Store> Stores { get; set; }
+    public virtual DbSet<Store>? Stores { get; set; }
 
-    public virtual DbSet<Storemapping> Storemappings { get; set; }
+    public virtual DbSet<Storemapping>? Storemappings { get; set; }
 
-    public virtual DbSet<Taxcategory> Taxcategories { get; set; }
+    public virtual DbSet<Taxcategory>? Taxcategories { get; set; }
 
-    public virtual DbSet<Tierprice> Tierprices { get; set; }
+    public virtual DbSet<Tierprice>? Tierprices { get; set; }
 
-    public virtual DbSet<Topic> Topics { get; set; }
+    public virtual DbSet<Topic>? Topics { get; set; }
 
-    public virtual DbSet<Topictemplate> Topictemplates { get; set; }
+    public virtual DbSet<Topictemplate>? Topictemplates { get; set; }
 
-    public virtual DbSet<Urlrecord> Urlrecords { get; set; }
+    public virtual DbSet<Urlrecord>? Urlrecords { get; set; }
 
-    public virtual DbSet<Vendor> Vendors { get; set; }
+    public virtual DbSet<Vendor>? Vendors { get; set; }
 
-    public virtual DbSet<Vendornote> Vendornotes { get; set; }
+    public virtual DbSet<Vendornote>? Vendornotes { get; set; }
 
-    public virtual DbSet<Warehouse> Warehouses { get; set; }
+    public virtual DbSet<Warehouse>? Warehouses { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
+
         => optionsBuilder.UseNpgsql("Host=localhost;Database=luxelane;Username=postgres;Password=Sou@2345");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)

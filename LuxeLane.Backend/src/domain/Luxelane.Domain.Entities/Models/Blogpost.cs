@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿namespace Luxelane.Domain.Entities.Models;
 
-namespace Luxelane.Domain.Entities.Models;
-
-public partial class Blogpost
+public sealed partial class Blogpost
 {
     public Guid Id { get; set; }
 
@@ -35,7 +32,7 @@ public partial class Blogpost
 
     public string? Title { get; set; }
 
-    public virtual ICollection<Blogcomment> Blogcomments { get; set; } = new List<Blogcomment>();
+    public ICollection<Blogcomment> Blogcomments { get; set; } = new List<Blogcomment>();
 
-    public virtual Language? Language { get; set; }
+    public Language? Language { get; set; }
 }
