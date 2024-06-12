@@ -15,17 +15,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuxeLane.App.API", "src\app
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuxeLane.Domain.Migrator", "src\domain\LuxeLane.Domain.Migrator\LuxeLane.Domain.Migrator.csproj", "{AC773AC1-EE38-43E5-8CAF-51F9DEE9D733}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuxeLane.Domain.Persistance", "src\domain\LuxeLane.Domain.Persistance\LuxeLane.Domain.Persistance.csproj", "{A48E9FF3-CB03-4A6C-BDBE-4FADF28C681F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuxeLane.Domain.Persistance", "src\domain\LuxeLane.Domain.Persistance\LuxeLane.Domain.Persistance.csproj", "{A48E9FF3-CB03-4A6C-BDBE-4FADF28C681F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuxeLane.Domain.Repository.Injection", "src\domain\LuxeLane.Domain.Repository.Injection\LuxeLane.Domain.Repository.Injection.csproj", "{B9390E59-1DAC-4853-9311-C56D4CDEF222}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuxeLane.Domain.Repository.Injection", "src\domain\LuxeLane.Domain.Repository.Injection\LuxeLane.Domain.Repository.Injection.csproj", "{B9390E59-1DAC-4853-9311-C56D4CDEF222}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuxeLane.Domain.Repository", "src\domain\LuxeLane.Domain.Repository\LuxeLane.Domain.Repository.csproj", "{C1570671-2E13-4694-B67F-09222ADC743E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuxeLane.Domain.Repository", "src\domain\LuxeLane.Domain.Repository\LuxeLane.Domain.Repository.csproj", "{C1570671-2E13-4694-B67F-09222ADC743E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuxeLane.Domain.Specification", "src\domain\LuxeLane.Domain.Specification\LuxeLane.Domain.Specification.csproj", "{553C1881-7ACC-4CC3-8736-5B2BAACB6F73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuxeLane.Domain.Specification", "src\domain\LuxeLane.Domain.Specification\LuxeLane.Domain.Specification.csproj", "{553C1881-7ACC-4CC3-8736-5B2BAACB6F73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuxeLane.Domain.Enum", "src\domain\LuxeLane.Domain.Enum\LuxeLane.Domain.Enum.csproj", "{04D6366C-6405-4AEE-8F73-4CEC19649D62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuxeLane.Domain.Enum", "src\domain\LuxeLane.Domain.Enum\LuxeLane.Domain.Enum.csproj", "{04D6366C-6405-4AEE-8F73-4CEC19649D62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuxeLane.Domain.Tests.Unit", "LuxeLane.Domain.Tests.Unit\LuxeLane.Domain.Tests.Unit.csproj", "{73A3F6E0-28BD-4E56-8086-52AABDC24CC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuxeLane.Domain.Tests.Unit", "src\domain\LuxeLane.Domain.Tests.Unit\LuxeLane.Domain.Tests.Unit.csproj", "{018D4561-130B-47AD-8268-0EA421AD23AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,10 +65,10 @@ Global
 		{04D6366C-6405-4AEE-8F73-4CEC19649D62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04D6366C-6405-4AEE-8F73-4CEC19649D62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04D6366C-6405-4AEE-8F73-4CEC19649D62}.Release|Any CPU.Build.0 = Release|Any CPU
-		{73A3F6E0-28BD-4E56-8086-52AABDC24CC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{73A3F6E0-28BD-4E56-8086-52AABDC24CC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{73A3F6E0-28BD-4E56-8086-52AABDC24CC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{73A3F6E0-28BD-4E56-8086-52AABDC24CC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{018D4561-130B-47AD-8268-0EA421AD23AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{018D4561-130B-47AD-8268-0EA421AD23AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{018D4561-130B-47AD-8268-0EA421AD23AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{018D4561-130B-47AD-8268-0EA421AD23AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -84,7 +84,7 @@ Global
 		{C1570671-2E13-4694-B67F-09222ADC743E} = {E70C6D9F-53A9-48E3-B419-2C7A4E77343C}
 		{553C1881-7ACC-4CC3-8736-5B2BAACB6F73} = {E70C6D9F-53A9-48E3-B419-2C7A4E77343C}
 		{04D6366C-6405-4AEE-8F73-4CEC19649D62} = {E70C6D9F-53A9-48E3-B419-2C7A4E77343C}
-		{73A3F6E0-28BD-4E56-8086-52AABDC24CC7} = {E70C6D9F-53A9-48E3-B419-2C7A4E77343C}
+		{018D4561-130B-47AD-8268-0EA421AD23AE} = {E70C6D9F-53A9-48E3-B419-2C7A4E77343C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {349FDB71-2C26-4A94-8BE3-4BCFEF27DC7A}

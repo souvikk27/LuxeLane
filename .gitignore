@@ -27,3 +27,4 @@
 /LuxeLane.Backend/src/domain/LuxeLane.Domain.Repository/bin/Debug/net8.0
 /LuxeLane.Backend/src/domain/LuxeLane.Domain.Repository.Injection/bin/Debug/net8.0
 /LuxeLane.Backend/src/domain/LuxeLane.Domain.Specification/bin/Debug/net8.0
+/LuxeLane.Backend/src/domain/LuxeLane.Domain.Tests.Unit/obj
