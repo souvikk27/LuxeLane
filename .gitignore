@@ -30,3 +30,11 @@
 /LuxeLane.Backend/src/domain/LuxeLane.Domain.Tests.Unit/obj
 /.vs/LuxeLane/v17
 /.vs
+/LuxeLane.Backend/src/domain/LuxeLane.Domain.Tests.Unit/bin/Debug/net8.0
+/LuxeLane.Backend/src/app/LuxeLane.App.Shared/obj
+/LuxeLane.Backend/src/app/LuxeLane.App.Shared/bin/Debug/net8.0
+/LuxeLane.Backend/src/app/LuxeLane.App.Presentation/obj
+/LuxeLane.Backend/src/app/LuxeLane.App.Presentation/bin/Debug/net8.0
+/LuxeLane.Backend/src/app/LuxeLane.App.Infrastructure/obj
+/LuxeLane.Backend/src/app/LuxeLane.App.Infrastructure/bin/Debug/net8.0
+/LuxeLane.Backend/Error2024-06-12.log
