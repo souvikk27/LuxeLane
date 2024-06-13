@@ -16,8 +16,4 @@
     <ProjectReference Include="..\LuxeLane.Domain.Specification\LuxeLane.Domain.Specification.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Customers\" />
-  </ItemGroup>
-
 </Project>
